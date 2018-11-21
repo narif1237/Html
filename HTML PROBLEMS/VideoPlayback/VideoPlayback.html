@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title></title>
+    <script>
+        
+        
+
+        function play() {
+            document.getElementById("myVideo").play();
+            
+               
+        }
+        function pause() {
+            document.getElementById("myVideo").pause();
+
+
+        }
+        
+    </script>
+    <style>
+        .jumbotron {
+            width: 100% !important;
+            background: black !important;
+            margin-bottom: 0px !important;
+            border-bottom: 2px solid black !important;
+        }
+
+        #logo {
+            color: white !important;
+        }
+
+        #myVideo {
+            width: 100%;
+            height: 400px;
+        }
+
+        #videoSection {
+            margin-top: 0px;
+        }
+      
+    </style>
+</head>
+<body>
+    <section style="margin-bottom:0px;">
+
+
+        <div class="jumbotron">
+            <img src="./logo_final.JPG" style="float:left; padding:0px; margin-left:80px; margin-right:0;" alt="Paris" width="100" height="100">
+            <h1 class="text-center" id="logo">Awesome Online videos</h1>
+
+        </div>
+
+    </section>
+    <section id="videoSection">
+        <video id="myVideo">
+            <source src="./video.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="text-center">
+            <button id="center" onclick="play()" class="btn btn-primary">Play</button>
+            <button onclick="pause()" class="btn btn-danger">Pause</button>
+        </div>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #xena_form{
+            background-color: yellow;
+            border: 10px solid black;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Xena Travels</h1>
+    <div id="xena_form">
+        <form>
+            Name &nbsp;<input type="text" name="name" pattern="[A-Za-z]+"  required /><br />
+            <br />
+
+            Age &nbsp; <input type="text" name="age" pattern="[0-9]+" required /><br />
+            <br />
+
+            City &nbsp;
+            <input list="city" name="browser" id="cityselected">
+            <datalist id="city">
+                <option value="Rajkot">
+                <option value="Vizag">
+                <option value="Bangalore">
+            </datalist>
+            Email  &nbsp; <input type="email" name="email"  required/><br />
+            <br />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    
+
+</body>
+</html>
